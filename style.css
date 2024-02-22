@@ -97,11 +97,12 @@ nav ul li a:hover::after {
 }
 .tab-links {
   margin-right: 50px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
-.tab-links::afer {
+.tab-links::after {
   content: "";
   width: 0;
   height: 3px;
@@ -121,4 +122,10 @@ nav ul li a:hover::after {
 .tab-contents ul li span {
   color: #ff004f;
   font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
 }
