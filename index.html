@@ -16,14 +16,17 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/logo.png" alt="logo" />
-          <ul>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
+
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
           <p>Frontend Developer</p>
@@ -208,8 +211,8 @@
       </div>
     </div>
     <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
 
       function opentab(tabname) {
         for (tablink of tablinks) {
@@ -220,6 +223,17 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      const sidemenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
       }
     </script>
   </body>
