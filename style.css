@@ -154,3 +154,25 @@ section {
 .socials i:hover {
   transform: scale(1.1);
 }
+
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.experience-info {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.experience img {
+  width: 24vw;
+  border-radius: 3rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
