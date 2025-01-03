@@ -176,3 +176,26 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+.grid-card {
+  border: 2px solid black;
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  cursor: pointer;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+.grid-card:hover {
+  transform: scale(1.02);
+  background-color: black;
+  color: white;
+}
+.grid-card i {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #009dff, #ff00ff);
+  background-clip: text;
+  color: transparent;
+}
