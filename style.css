@@ -109,6 +109,28 @@ button {
   width: 100%;
   text-wrap: nowrap;
 }
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+.section-tech {
+  text-align: center;
+}
+.details-containers {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.tech-sub-title {
+  height: 50px;
+}
+.article-container {
+  height: 100%;
+}
 .about {
   display: flex;
   align-items: center;
@@ -121,7 +143,8 @@ button {
   gap: 10rem;
 }
 .about img {
-  width: 30vw;
+  height: 90vh;
+  width: 70vh;
   border-radius: 50%;
 }
 .info-box {
@@ -389,6 +412,9 @@ footer ul li a {
   .experience-info img {
     width: 70vw;
   }
+  .article-container img {
+    width: 50%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -437,5 +463,8 @@ footer ul li a {
   }
   footer ul {
     gap: 1rem;
+  }
+  .article-container img {
+    width: 50%;
   }
 }
