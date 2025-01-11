@@ -126,10 +126,27 @@ button {
   text-align: center;
 }
 .tech-sub-title {
-  height: 50px;
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
 }
 .article-container {
-  height: 100%;
+  display: flex;
+  text-align: initial;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+article .icon {
+  cursor: default;
 }
 .about {
   display: flex;
@@ -210,16 +227,34 @@ button {
 }
 
 .section-title {
+  font-size: 3rem;
   text-align: center;
-  font-size: 4rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
 }
 .experience-info {
   display: flex;
-  gap: 5rem;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.experience-container {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.experience-info,
+.experience-container {
+  display: flex;
+}
+.tech-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+#tech {
+  position: relative;
 }
 .experience img {
   width: 24vw;
