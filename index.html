@@ -51,6 +51,8 @@
       >
         Visit Github
       </button>
+
+      
     </header>
 
     <section id="about" class="about">
@@ -67,7 +69,7 @@
           <div class="btn-group">
             <button
               class="btn"
-              onclick="window.open('images/Mingo - Resume VA.pdf')"
+              onclick="window.open('images/Mingo Resume ZDS - Developer.pdf')"
             >
               Download CV
             </button>
@@ -145,7 +147,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
+                  <h3>React</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -254,6 +256,18 @@
               wireframes and create the final designs.
             </p>
           </div>
+
+          <div class="grid-card">
+            <i class="fa-solid fa-image"></i>
+            <span>Media Content Creator</span>
+            <h3>Freelance(Present)</h3>
+            <p>
+              I edit and make images for a local restaurant called Andrew's
+              Pizza in Tubod. I use Canva to create the images and videos for
+              their social media accounts. I also help them with their social
+              media marketing strategy.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -271,7 +285,7 @@
             interface. I also used the Geolocation API to get the user's
             location and display the weather data for that location.
           </p>
-          <div class="btn-group">
+          <div class="btn-group2">
             <button class="btn">Live Demo</button>
             <button
               class="btn"
@@ -292,7 +306,7 @@
             persist even after the user closed the browser. I also used the date
             object to display the current date and time on the user interface.
           </p>
-          <div class="btn-group">
+          <div class="btn-group2">
             <button class="btn">Live Demo</button>
             <button
               class="btn"
@@ -305,19 +319,22 @@
         </div>
 
         <div class="project-card">
-          <img src="images/Budgeting-App.jpg" alt="" />
-          <h3>Budgeting App</h3>
+          <img src="images/Product Store.jpg" alt="" />
+          <h3>Product Store</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores, ab cum ipsa ipsum earum ullam possimus perspiciatis.
-            Suscipit qui pariatur, sint culpa delectus exercitationem id et
-            beatae ipsam consectetur itaque?
+            Full Stack project where I used MERN stack for building this project. 
+            It is just a simple product store where you can add, delete, and update the products.
+             I used MongoDB for the database and Express.js for the backend. 
+             I also used React.js for the frontend and Node.js for the server.
+             This is also my first full stack project. this is also deployed on render.com.
+
           </p>
-          <div class="btn-group">
-            <button class="btn">Live Demo</button>
+          <div class="btn-group2">
+            <button class="btn"
+            onclick="window.open('https://product-store-h8k4.onrender.com/')", '_blank'>Live Demo</button>
             <button
               class="btn"
-              onclick="window.open('https://github.com/imoncrack27/Budget-App', '_blank')"
+              onclick="window.open('https://github.com/imoncrack27/Product-Store', '_blank')"
               aria-label="Visit my Github profile"
             >
               Github Repo
@@ -328,17 +345,19 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="input-box">
-        <div class="section-title">
-          Contact Me
-
-          <div class="input">
-            <input type="text" placeholder="example@gmail.com" />
+      <div class="contact-container">
+        <h2 class="section-title">Contact Me</h2>
+        <form action="https://formspree.io/f/xldjagre" method="POST" class="contact-form">
+          <div class="input-group">
+            <input type="email" name="email" placeholder="Your Email" required />
             <i class="fa-solid fa-envelope"></i>
           </div>
-
-          <button class="btn-submit">Submit</button>
-        </div>
+          <div class="input-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <i class="fa-solid fa-message"></i>
+          </div>
+          <button type="submit" class="btn-submit">Send</button>
+        </form>
       </div>
     </section>
 

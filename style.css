@@ -15,15 +15,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
-  color: white;
+  color: #fff;
   padding: 0.5rem 2rem;
   border-radius: 3rem;
   z-index: 1000;
   gap: 5rem;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #2c2c2c;
 }
 
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 .btn-submit {
   border-radius: 3rem;
   padding: 2rem 1.5rem;
@@ -33,6 +40,9 @@ header {
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
   font-size: 3rem;
+}
+.btn-group2 {
+  color: black;
 }
 .btn-submit:hover {
   background-color: black;
@@ -52,6 +62,10 @@ header {
 .nav-links {
   display: flex;
   gap: 3rem;
+  color: #ffffff;
+}
+.nav-links li a:hover {
+  color: #5a67d8;
 }
 li a {
   position: relative;
@@ -67,7 +81,7 @@ li a::before {
   top: 25px;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+  background: #434190;
 }
 li a:hover::before {
   width: 100%;
@@ -82,10 +96,10 @@ li a:hover::before {
   cursor: pointer;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+  background: #5a67d8;
 }
 .visit-btn:hover {
-  background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+  background: #434190;
   transform: scale(1.03);
 }
 #menu-icon {
@@ -98,6 +112,8 @@ section {
   padding: 8rem 12%;
   width: 100%;
   position: relative;
+  background-color: #121212;
+  color: white;
 }
 button {
   background-color: white;
@@ -109,6 +125,7 @@ button {
   width: 100%;
   text-wrap: nowrap;
 }
+
 .icon {
   cursor: pointer;
   height: 2rem;
@@ -126,7 +143,7 @@ button {
   text-align: center;
 }
 .tech-sub-title {
-  color: rgb(85, 85, 85);
+  color: white;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -148,6 +165,7 @@ article {
 article .icon {
   cursor: default;
 }
+
 .about {
   display: flex;
   align-items: center;
@@ -160,9 +178,13 @@ article .icon {
   gap: 10rem;
 }
 .about img {
-  height: 90vh;
-  width: 70vh;
-  border-radius: 50%;
+  width: 100%; /* Makes the image take up the full width of its container */
+  max-width: 450px; /* Sets a maximum width to avoid it becoming too large */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solidrgb(56, 50, 50); /* White border around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a nice effect */
+  margin-bottom: 20px; /* Space between image and text */
 }
 .info-box {
   display: flex;
@@ -183,7 +205,7 @@ article .icon {
 }
 .info-box span {
   font-size: 2rem;
-  background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+  background: rgb(143, 173, 212);
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -191,6 +213,13 @@ article .icon {
 .btn-group {
   display: flex;
   gap: 1rem;
+
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 .btn {
   border-radius: 3rem;
@@ -202,15 +231,20 @@ article .icon {
   transition: 0.2s ease-in-out;
 }
 .btn-icon {
+  background-color: #5a67d8;
+  color: white;
   border: none;
-  background: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 .link-icon {
   border: none;
   color: black;
 }
 .btn:hover {
-  background-color: black;
+  background-color: #434190;
   color: white;
 }
 .socials {
@@ -252,6 +286,7 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  background-color: #1e1e1e;
 }
 #tech {
   position: relative;
@@ -339,6 +374,80 @@ article .icon {
   font-weight: 500;
 }
 
+.contact {
+  padding: 60px 20px;
+  background: #121212;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  background: rgb(24, 22, 27);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.contact-form .input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 45px 14px 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5a67d8;
+}
+
+.contact-form i {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+.contact-form textarea + i {
+  top: 16px; /* adjust icon for textarea */
+  transform: none;
+}
+
+.btn-submit {
+  background: #5a67d8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background: #434190;
+}
+
 .input-box {
   display: flex;
   flex-direction: column;
@@ -387,7 +496,7 @@ footer ul {
 }
 footer ul li a {
   font-weight: 600;
-  color: black;
+  color: white;
 }
 .copyright {
   font-size: 300;
@@ -431,6 +540,10 @@ footer ul li a {
   .about-container {
     flex-direction: column;
   }
+
+  .about-img {
+    max-width: 250px; /* Reduces image size on smaller screens */
+  }
   .input-box input {
     padding: 1rem 2rem;
     font-size: 1.8rem;
@@ -468,11 +581,13 @@ footer ul li a {
     text-align: center;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 3rem;
+    color: #ffffff;
     display: none;
   }
   .nav-links li {
     margin-top: 1.5rem;
     padding: 1rem;
+    color: #ffffff;
   }
   .nav-links.active {
     display: block;
@@ -487,6 +602,8 @@ footer ul li a {
 
   .about-container img {
     width: 80vw;
+    border: 4px solid #333;
+    border-radius: 12px;
   }
   .input-box input {
     padding: 0.5rem 3rem;
