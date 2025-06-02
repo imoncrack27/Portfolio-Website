@@ -127,8 +127,10 @@ button {
 }
 
 .icon {
-  cursor: pointer;
-  height: 2rem;
+  width: 20rem;
+  height: 5rem;
+  object-fit: contain;
+  margin-right: 10px;
 }
 .section-tech {
   text-align: center;
