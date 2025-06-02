@@ -17,20 +17,22 @@ header {
   justify-content: center;
   backdrop-filter: blur(8px);
   color: #fff;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 3rem;
   z-index: 1000;
   gap: 5rem;
-  background-color: #1e1e1e;
+  background-color: rgb(10, 4, 27);
   border-bottom: 1px solid #2c2c2c;
 }
 
 body {
-  background-color: #121212;
+  background-image: url("images/dark-bg.avif");
+
   color: #ffffff;
   font-family: "Segoe UI", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .btn-submit {
   border-radius: 3rem;
   padding: 2rem 1.5rem;
@@ -81,7 +83,7 @@ li a::before {
   top: 25px;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: #434190;
+  background: rgb(199, 37, 37);
 }
 li a:hover::before {
   width: 100%;
@@ -112,7 +114,7 @@ section {
   padding: 8rem 12%;
   width: 100%;
   position: relative;
-  background-color: #121212;
+
   color: white;
 }
 button {
@@ -127,13 +129,14 @@ button {
 }
 
 .icon {
-  width: 20rem;
-  height: 5rem;
+  width: 100%;
+  height: auto;
   object-fit: contain;
   margin-right: 10px;
 }
 .section-tech {
   text-align: center;
+  font-size: 2rem;
 }
 .details-containers {
   padding: 1.5rem;
@@ -197,7 +200,7 @@ article .icon {
   gap: 1.5rem;
 }
 .info-box h3 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 500;
   opacity: 0.8;
 }
@@ -206,11 +209,10 @@ article .icon {
   font-weight: 600;
 }
 .info-box span {
-  font-size: 2rem;
+  font-size: 3rem;
   background: rgb(143, 173, 212);
   background-clip: text;
   color: transparent;
-  font-size: 2rem;
 }
 .btn-group {
   display: flex;
@@ -219,18 +221,20 @@ article .icon {
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 12px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background 0.3s;
 }
 .btn {
-  border-radius: 3rem;
-  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  padding: 1.2rem 1.3rem;
   border: 2px solid black;
   cursor: pointer;
   font-weight: 500;
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
+  font-size: 1.1rem;
+  font-family: "Papyrus", Fantasy;
 }
 .btn-icon {
   background-color: #5a67d8;
@@ -246,7 +250,7 @@ article .icon {
   color: black;
 }
 .btn:hover {
-  background-color: #434190;
+  background-color: rgb(223, 26, 26);
   color: white;
 }
 .socials {
@@ -262,19 +266,17 @@ article .icon {
   transform: scale(1.1);
 }
 
-.section-title {
-  font-size: 3rem;
-  text-align: center;
-}
 .experience-info {
   display: flex;
   justify-content: center;
+
   flex-direction: column;
 }
 .experience-container {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  flex-direction: column;
 }
 .experience-info,
 .experience-container {
@@ -379,13 +381,13 @@ article .icon {
 
 .contact {
   padding: 60px 20px;
-  background: #121212;
+
   display: flex;
   justify-content: center;
 }
 
 .contact-container {
-  background: rgb(24, 22, 27);
+  background: rgba(255, 255, 255, 0.8);
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -395,9 +397,20 @@ article .icon {
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 2.5rem;
   margin-bottom: 24px;
   font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.contact-me {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: rgb(12, 11, 11);
 }
 
 .contact-form .input-group {
